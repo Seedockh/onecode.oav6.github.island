@@ -1,0 +1,24 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sign In</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div>
+    <h1>DASHBOARD</h1>
+    <% if (message) { %>
+      <p class="message"><%= message %></p>
+    <% } %>
+    <h2>Your datas (JSON) :</h2>
+    <hr>
+    <pre id="json">
+      <p><%= infos %></p>
+    </pre>
+    <hr>
+    <a href='/signout'>Back to main menu</a>
+  </div>
+</body>
+</html>
